@@ -78,3 +78,14 @@ h1{
   font-size: 15px;
 
 }
+
+.card{
+  text-align: center;
+  width: 50%;
+  width: 15rem;
+  padding: .5rem;
+  background-color: white;
+  border: 5px solid #bacdd8;
+  border-radius: 12px;
+  display: inline-grid;
+}
