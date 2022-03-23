@@ -44,3 +44,14 @@ body{
 }
 
 
+h1{
+  color: #62a4ab;
+  display:flex;
+  display:inline-block;
+  justify-content: center;
+  text-align: center;
+  margin-left: 40%;
+  margin-bottom: 0;
+  font-family: 'Creepster';
+
+}
