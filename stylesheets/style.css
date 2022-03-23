@@ -88,4 +88,6 @@ h1{
   border: 5px solid #bacdd8;
   border-radius: 12px;
   display: inline-grid;
+  margin: 1rem 2rem;
+  margin-left: 7rem;
 }
