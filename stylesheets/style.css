@@ -98,3 +98,8 @@ img{
   height: 214px;
   align-items: center;
 }
+
+footer{
+  float: right;
+  margin-right: 20px;
+}
