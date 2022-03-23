@@ -1,10 +1,14 @@
 // this is for my javascript project
 document.addEventListener('DOMContentLoaded',()=>{
   console.log("Dom has loaded");
-  fetchAllCharacters()
+  fetchAllCharacters();
+  searchCharacters();
 })
 const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
+const form = document.querySelector('form')
+const ulContainer = document.querySelector('.cards')
+
 function fetchAllCharacters(){
   fetch('https://rickandmortyapi.com/api/character')
   .then(response => response.json())
@@ -31,5 +35,19 @@ function renderCharacters(characters){
     div.appendChild(like)
     cardUl.appendChild(div)
   
+  })
+}
+
+function searchCharacters(){
+  form.addEventListener('submit',(e) =>{
+    e.preventDefault();
+    console.log(e.target[0].value)
+    fetch(`https://rickandmortyapi.com/api/character/?name=${e.target[0].value}`)
+    .then(response => response.json())
+    .then(data => {
+      ulContainer.innerHTML = ' '
+      renderCharacters(data.results)
+    })
+    form.reset()
   })
 }
