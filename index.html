@@ -12,7 +12,8 @@
 </head>
 <body>
   <!--Add header and navigation-->
-  <header>
+  <div>
+    <header>
     <a href="index.html" class="logo">Rick and Morty Characters</a>
     <nav>
       <ul>
@@ -20,8 +21,18 @@
         <li><a href="#" id="favorite-characters-link">Favorite Characters</a></li>
       </ul>
     </nav>
-
   </header>
+</div>
+  <!--Create a search bar-->
+  <div>
+    <h1>Search Characters</h1>
+      <div id="search-bar">
+          <form class ="text-center" id ="character-form">
+            <input type="text" name="search-bar" id="search-input" placeholder="Search Characters"/>
+            <input type="submit" id="submit" value="search"/>
+          </form>
+      </div>
+  </div>
   <script src="javascripts/index.js"></script>
 </body>
 </html>

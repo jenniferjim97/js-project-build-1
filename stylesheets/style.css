@@ -1,12 +1,18 @@
+header{
+  padding-bottom: 80px;
+}
 .logo{
   display:flex;
   float:left;
   padding: 38px 0 30px 30px;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: 'Creepster', cursive;
+  font-family: 'Creepster';
   color: #62a4ab;
   
+}
+.logo:hover{
+  color: #444;
 }
 nav ul{
   float:right;
@@ -23,7 +29,7 @@ nav li{
 nav a{
   text-decoration: none;
   text-transform: uppercase;
-  font-family: 'Creepster', cursive;
+  font-family: 'Creepster';
   font-size: 1em;
   color: #62a4ab;
   justify-content: space-around;
@@ -36,3 +42,5 @@ nav a:hover{
 body{
   background-color: black;
 }
+
+
