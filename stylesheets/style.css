@@ -1,3 +1,28 @@
-h1{
+.logo{
+  display:flex;
+  float:left;
+  padding: 38px 0 30px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
   font-family: 'Creepster', cursive;
+  color: #62a4ab;
+
+}
+nav ul{
+  float:right;
+  padding: 20px;
+}
+
+nav li{
+  display:inline-block;
+}
+nav a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Creepster', cursive;
+  font-size: 1em;
+  color: #62a4ab;
+}
+body{
+  background-color: black;
 }
