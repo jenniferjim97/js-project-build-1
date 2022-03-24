@@ -14,28 +14,39 @@ function fetchAllCharacters(){
   .then(response => response.json())
   .then(characters => 
     renderCharacters(characters.results))
-
 }
 
 function renderCharacters(characters){
   characters.forEach(character => {
-    const div = document.createElement('div');
+    const li = document.createElement('li');
     const cardUl = document.querySelector('.cards');
     const image = document.createElement('img');
     const name = document.createElement('h3');
     const like = document.createElement('button');
 
-    div.classList = 'card'
+    li.classList = 'card'
     image.src = character.image
     name.innerText = character.name
     like.innerHTML = EMPTY_HEART
     like.classList = 'empty'
-    div.appendChild(image)
-    div.appendChild(name)
-    div.appendChild(like)
-    cardUl.appendChild(div)
+    li.appendChild(image)
+    li.appendChild(name)
+    li.appendChild(like)
+    cardUl.appendChild(li)
+
+    like.addEventListener('click', (e)=>{
+    if(like.innerHTML === EMPTY_HEART){
+      like.classList.replace('empty', 'full')
+      like.innerHTML = FULL_HEART
+    }
+    else if(like.innerHTML === FULL_HEART){
+      like.classList.replace('full', 'empty')
+      like.innerHTML = EMPTY_HEART
+    }
+    })
+  }
   
-  })
+  )
 }
 
 function searchCharacters(){
@@ -51,3 +62,4 @@ function searchCharacters(){
     form.reset()
   })
 }
+

@@ -103,3 +103,13 @@ footer{
   float: right;
   margin-right: 20px;
 }
+
+.empty{
+  color:grey;
+  border-radius: 12px;
+}
+
+.full{
+  color:red;
+  border-radius: 12px;
+}
