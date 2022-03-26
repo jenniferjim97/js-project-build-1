@@ -1,19 +1,27 @@
+
 header{
   padding-bottom: 80px;
 }
+
+
 .logo{
   display:flex;
   float:left;
-  padding: 38px 0 30px 30px;
+  padding: 0 0 30px 30px;
   text-decoration: none;
-  text-transform: uppercase;
-  font-family: 'Creepster';
-  color: #62a4ab;
-  
+  font-family: Helvetica;
+  color: white;
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  cursor: pointer;
 }
+
+
 .logo:hover{
   color: #444;
 }
+
 nav ul{
   float:right;
   padding: 20px;
@@ -24,14 +32,15 @@ nav li{
   margin-left: 70px;
   padding-right:30px;
   font-size: 30px;
+  font-weight: bold;
   cursor: pointer;
 }
+
 nav a{
   text-decoration: none;
-  text-transform: uppercase;
-  font-family: 'Creepster';
+  font-family: Helvetica;
   font-size: 1em;
-  color: #62a4ab;
+  color: white;
   justify-content: space-around;
 }
 
@@ -41,23 +50,32 @@ nav a:hover{
 
 body{
   background-color: black;
+  background-image: url('https://i.pinimg.com/originals/6b/81/a1/6b81a1049b32cfa0fe2038fbc0a6d097.png');
+  background-repeat: no-repeat;
+  background-position: right 52% bottom 10%;
+  background-attachment: fixed;
+  background-size: 500px;
 }
 
 
 h1{
-  color: #62a4ab;
+  color: white;
   display:flex;
   display:inline-block;
   justify-content: center;
   text-align: center;
-  margin-left: 40%;
+  margin-top: 5%;
+  margin-left: 35%;
   margin-bottom: 0;
-  font-family: 'Creepster';
+  font-family: Helvetica;
+  font-size:50px;
 
 }
+
 #search-bar{
   display:flex;
   margin-top:30px;
+  margin-left: 70px;
   justify-content: center;
   align-items: center;
   flex-direction: row;
@@ -67,16 +85,21 @@ h1{
   align-items: center;
   justify-content: center;
   border-radius: 7px;
-  width: 400px;
-  height: 30px;
+  width: 425px;
+  height: 40px;
+  font-size: 20px;
+  font-family: Helvetica;
+  font-weight: bold;
 }
 
 #submit{
   cursor: pointer;
   margin-left: 10px;
   border-radius: 5px;
-  font-size: 15px;
-
+  font-size: 17px;
+  font-family: Helvetica;
+  background-color:#444;
+  color: white;
 }
 
 .card{
@@ -85,7 +108,8 @@ h1{
   width: 15rem;
   padding: .5rem;
   background-color: white;
-  border: 5px solid #bacdd8;
+  border: 5px solid #444;
+  font-family: Helvetica;
   border-radius: 12px;
   display: inline-grid;
   margin: 1rem 2rem;
@@ -94,9 +118,12 @@ h1{
 
 img{
   width: 100%;
-  border-radius: 12px;
+  border-radius: 10px;
   height: 214px;
   align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+  padding: 0;
 }
 
 footer{
@@ -105,11 +132,32 @@ footer{
 }
 
 .empty{
-  color:grey;
+  color:white;
   border-radius: 12px;
+  background-color: #444;
+  
 }
 
 .full{
   color:red;
   border-radius: 12px;
+  height:100%;
+  background-color: #444;
+}
+
+like :hover{
+  color:red;
+}
+
+h3{
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.background-image{
+  width: 100%;
+  border-radius: 12px;
+  height: 500px;
+  align-items: center;
+  margin-top: 30px;
 }
