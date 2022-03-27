@@ -1,4 +1,4 @@
-# Javascript Project Build 
+# Rick And Morty Character Generator
 
 
 ### Overview

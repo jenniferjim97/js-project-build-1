@@ -5,13 +5,12 @@ document.addEventListener('DOMContentLoaded',()=>{
   allCharacterslink();
 })
 
-const EMPTY_HEART = '♡'
-const FULL_HEART = '❤️'
-const form = document.querySelector('form')
-const ulContainer = document.querySelector('.cards')
-const allCharacters = document.getElementById('all-characters-link')
-// const next = document.getElementById('next');
-// const back = document.getElementById('back');
+const EMPTY_HEART = '♡';
+const FULL_HEART = '❤️';
+const form = document.querySelector('form');
+const ulContainer = document.querySelector('.cards');
+const allCharacters = document.getElementById('all-characters-link');
+
 
 function fetchAllCharacters(){
   fetch('https://rickandmortyapi.com/api/character')
@@ -59,11 +58,8 @@ function renderCharacters(characters){
         like.classList.replace('full', 'empty')
         like.innerHTML = EMPTY_HEART
       }
-      
     })
-  }
-  
-  )
+  })
 };
 
 
@@ -89,50 +85,3 @@ function home(){
     ulContainer.innerHTML = ''
 
   })};
-
-
-// next.addEventListener('click',(e)=>{
-//   console.log(e)
-//   let pageNum;
-//   const totalPageNum = 42
-//   let currentPage;
-  
-    // ulContainer.innerHTML = ''
-  //   let pageNum = 1;
-  //   console.log('i have been clicked!')
-  //   // let pageNum = characters.info.next
-  // fetch( `https://rickandmortyapi.com/api/character?page=${++pageNum}`)
-  // .then(response => response.json())
-  // .then(characters => {
-  //   ulContainer.innerHTML =''
-  //   const pages = characters.info.pages
-  //   let nextPage = characters.info.next
-  //   // const pages = characters.info.pages
-  //   // console.log(pageNum)
-
-  //   // console.log(characters)
-  //   console.log(pages)
-  //   // ulContainer.innerHTML = ''
-  //   // for(let nextPage = 1; nextPage < pages.length; nextPage++)
-  //   // renderCharacters(characters.results)
-    
-  //   renderCharacters(characters.results)
-  // fetch(`https://rickandmortyapi.com/api/character?page=${++pageNum}`)
-  // .then(response=> response.json())
-  // .then(pages => {
-  //   ulContainer.innerHTML = ' '
-  //   for(let pageNum = 0; pageNum < totalPageNum; pageNum++)
-  //   console.log(pageNum)
-
-
-  //   renderCharacters(pages.results)
-  // })
-
-// })
-
-// back.addEventListener('click',()=>{
-//   console.log("ive also been clicked")
-//   pageNum -=1
-//   ulContainer.innerHTML = ' '
-//   render
-// })
