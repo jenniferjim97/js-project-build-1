@@ -161,3 +161,20 @@ h3{
   align-items: center;
   margin-top: 30px;
 }
+
+
+.hidden-next{
+  display:none;
+}
+
+.hidden-back{
+  display: none;
+}
+
+.show-next{
+  float: right;
+}
+
+.show-back{
+  float: left;
+}
