@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   home();
   searchCharacters();
   allCharacterslink();
+  backNextButton();
 })
 
 const EMPTY_HEART = '♡';
@@ -10,6 +11,8 @@ const FULL_HEART = '❤️';
 const form = document.querySelector('form');
 const ulContainer = document.querySelector('.cards');
 const allCharacters = document.getElementById('all-characters-link');
+const back = document.querySelector('.hidden-back')
+const next = document.querySelector('.hidden-next')
 
 
 function fetchAllCharacters(){
@@ -19,12 +22,14 @@ function fetchAllCharacters(){
     ulContainer.innerHTML = ' '
     console.log(characters)
     renderCharacters(characters.results)
+     back.classList.replace('hidden-back', 'show-back')
+    next.classList.replace('hidden-next', 'show-next')
   })
 };
 
 function allCharacterslink(){
   ulContainer.innerHTML = ''
-  allCharacters.addEventListener('click', fetchAllCharacters)
+  allCharacters.addEventListener('click', fetchAllCharacters);
 };
 
 function renderCharacters(characters){
@@ -76,6 +81,8 @@ function searchCharacters(){
       renderCharacters(data.results)
     })
     form.reset()
+    back.classList.replace('hidden-back', 'show-back')
+    next.classList.replace('hidden-next', 'show-next')
   })
 };
 
@@ -83,5 +90,17 @@ function home(){
   const logo = document.querySelector('.logo');
   logo.addEventListener('click', (e)=>{
     ulContainer.innerHTML = ''
+    back.classList.replace('show-back', 'hidden-back')
+    next.classList.replace('show-next', 'hidden-next')
 
   })};
+
+ function backNextButton(){
+   back.addEventListener('click', ()=>{
+     console.log('ive been clicked')
+   })
+
+   next.addEventListener('click', ()=>{
+     console.log('ive also been clicked!')
+   })
+ }
