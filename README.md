@@ -22,7 +22,10 @@ You are able to search any Rick and Morty character using the search bar, see al
  1. Enter any character name into the search bar
 ![](/gifs/search-character.gif)
 
-2. 
+2. On the top right corner is an all characters link. When you click on the link, the main characters will load first then all of the other characters will load alphabetically.
+![](/gifs/all-character-links.gif)
+
+3. On the bottom left and right corners are going to be the back and next buttons. Click next if you want to load the next set of characters or click back if you want to load the previous set of characters.
 
 
 ## Github Url
