@@ -26,6 +26,7 @@ You are able to search any Rick and Morty character using the search bar, see al
 ![](/gifs/all-character-links.gif)
 
 3. On the bottom left and right corners are going to be the back and next buttons. Click next if you want to load the next set of characters or click back if you want to load the previous set of characters.
+![](/gifs/next-back-buttons.gif)
 
 
 ## Github Url
