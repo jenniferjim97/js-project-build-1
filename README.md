@@ -26,6 +26,11 @@ You are able to search any Rick and Morty character using the search bar, see al
 ### Github Url
 [Test me!](https://jenniferjim97.github.io/js-project-build-1/#)
 
+### Languages
+* HTML
+* CSS
+* Vanilla JavaScript
+
 ### Resources
 [Rick and Morty Api](https://rickandmortyapi.com/api/character)
 
