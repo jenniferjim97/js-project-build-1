@@ -20,7 +20,7 @@ function fetchAllCharacters(){
   .then(response => response.json())
   .then(characters => {
     ulContainer.innerHTML = ' '
-    console.log(characters)
+    // console.log(characters)
     renderCharacters(characters.results)
      back.classList.replace('hidden-back', 'show-back')
     next.classList.replace('hidden-next', 'show-next')
@@ -43,6 +43,7 @@ function renderCharacters(characters){
     const like = document.createElement('button');
     
     li.classList = 'card'
+    image.classList = 'card-img'
     image.src = character.image
     name.innerText = `Name: ${character.name}`
     species.innerText =`Species: ${character.species}`
@@ -71,18 +72,20 @@ function renderCharacters(characters){
 function searchCharacters(){
   form.addEventListener('submit',(e) =>{
     e.preventDefault();
-    console.log(e.target[0].value)
-    console.log(e)
-    console.log(e.target[0].value)
+    // console.log(e.target[0].value)
+    // console.log(e)
+    // console.log(e.target[0].value)
     fetch(`https://rickandmortyapi.com/api/character/?name=${e.target[0].value}`)
     .then(response => response.json())
     .then(data => {
       ulContainer.innerHTML = ' '
       renderCharacters(data.results)
+
+      // console.log(data.results)
     })
     form.reset()
-    back.classList.replace('hidden-back', 'show-back')
-    next.classList.replace('hidden-next', 'show-next')
+    back.classList.replace('show-back', 'hidden-back')
+    next.classList.replace('show-next', 'hidden-next')
   })
 };
 
@@ -92,15 +95,32 @@ function home(){
     ulContainer.innerHTML = ''
     back.classList.replace('show-back', 'hidden-back')
     next.classList.replace('show-next', 'hidden-next')
-
-  })};
+  })
+};
 
  function backNextButton(){
-   back.addEventListener('click', ()=>{
+   let pageNum = 1
+   back.addEventListener('click', (e)=>{
      console.log('ive been clicked')
+     fetch(`https://rickandmortyapi.com/api/character?page=${--pageNum}`)
+     .then(response=> response.json())
+     .then(data => {console.log(data)
+    console.log(data.info.back)
+    ulContainer.innerHTML = ''
+    renderCharacters(data.results)
+    })
+
+
    })
 
-   next.addEventListener('click', ()=>{
+   next.addEventListener('click', (e)=>{
      console.log('ive also been clicked!')
+     fetch(`https://rickandmortyapi.com/api/character?page=${pageNum++}`)
+     .then(response=> response.json())
+     .then(data => {console.log(data)
+      console.log(data.info.next)
+      ulContainer.innerHTML= ''
+      renderCharacters(data.results)
+    })
    })
  }
