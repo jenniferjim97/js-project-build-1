@@ -1,10 +1,10 @@
 # Rick And Morty Character Generator
 
-### Overview
+## Overview
 You are able to search any Rick and Morty character using the search bar, see all characters and like or unlike them.  
 
 
-### Features (MVPs)
+## Features (MVPs)
 * DOMContentLoaded event listener
 
 * Added a submit event listener to the search bar that loads your search input.
@@ -18,20 +18,22 @@ You are able to search any Rick and Morty character using the search bar, see al
 * Logo has a click event listener that brings you back to homepage and clears out all characters from the page. 
 
 
-### Installation
-1. clone this repo
-2. open index.html to your browser
+## How to use
+ 1. Enter any character name into the search bar
+![](/gifs/search-character.gif)
+
+2. 
 
 
-### Github Url
+## Github Url
 [Test me!](https://jenniferjim97.github.io/js-project-build-1/#)
 
-### Languages
+## Languages
 * HTML
 * CSS
 * Vanilla JavaScript
 
-### Resources
+## Resources
 [Rick and Morty Api](https://rickandmortyapi.com/api/character)
 
 [logo](https://www.logolynx.com/images/logolynx/1b/1b195a66f61b7036991d19b9a2bb4e7c.jpeg)

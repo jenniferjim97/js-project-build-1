@@ -105,7 +105,7 @@ function home(){
      fetch(`https://rickandmortyapi.com/api/character?page=${--pageNum}`)
      .then(response=> response.json())
      .then(data => {console.log(data)
-    console.log(data.info.back)
+    // console.log(data.info.back)
     ulContainer.innerHTML = ''
     renderCharacters(data.results)
     })
