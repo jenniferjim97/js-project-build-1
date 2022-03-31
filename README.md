@@ -3,11 +3,10 @@
 ## Overview
 You are able to search any Rick and Morty character using the search bar, see all characters and like or unlike them.  
 
-
 ## Features (MVPs)
 * DOMContentLoaded event listener
 
-* Added a submit event listener to the search bar that loads your search input.
+* A submit event listener for the search bar that loads your search input.
 
 * All characters link has a click event listener that loads all characters onto page.
 
@@ -19,14 +18,25 @@ You are able to search any Rick and Morty character using the search bar, see al
 
 
 ## How to use
- 1. Enter any character name into the search bar
-![](/gifs/search-character.gif)
+ 1. Enter any character name into the search bar. It should return a card for every result loaded containing the character's image, name, type of specie, and a like button.
 
-2. On the top right corner is an all characters link. When you click on the link, the main characters will load first then all of the other characters will load alphabetically.
-![](/gifs/all-character-links.gif)
+![](/gifs/search.gif)
 
-3. On the bottom left and right corners are going to be the back and next buttons. Click next if you want to load the next set of characters or click back if you want to load the previous set of characters.
+2. On the top right corner exists an all characters link. Click on the link and the main characters will load first then the rest of the characters will load alphabetically.
+
+![](/gifs/all-character-link.gif)
+
+3. On the bottom left and right corners are the back and next buttons. Click '>>' if you want to load the next set of characters or click '<<' if you want to load the previous set of characters.
+
 ![](/gifs/next-back-buttons.gif)
+
+4. Click like on any of the characters and click again to unlike the character.
+
+![](/gifs/like-button.gif)
+
+5. Click on logo or character generator to return to homepage and clear out characters.
+
+![](/gifs/homepage.gif)
 
 
 ## Github Url
