@@ -1,7 +1,7 @@
 # Rick And Morty Character Generator
 
 ## Overview
-You are able to search any Rick and Morty character using the search bar, see all characters and like or unlike them.  
+Search any Rick and Morty character using the search bar, see all characters and be able to like or unlike them.  
 
 ## Features (MVPs)
 * DOMContentLoaded event listener
@@ -10,15 +10,15 @@ You are able to search any Rick and Morty character using the search bar, see al
 
 * All characters link has a click event listener that loads all characters onto page.
 
-* The next and back buttons have a click event listener that loads the next set of characters or loads previous set.
+* The next and back buttons have a click event listener that loads the next set of characters or the previous set.
 
-* It has a click event listener for the like button in each character card to like a character or unlike them. 
+* In each character card is a like button with a click event listener that will like or unlike a character when clicked.
 
-* Logo has a click event listener that brings you back to homepage and clears out all characters from the page. 
+* Logo has a click event listener that brings you back to the homepage and clears out all characters from the page. 
 
 
 ## How to use
- 1. Enter any character name into the search bar. It should return a card for every result loaded containing the character's image, name, type of specie, and a like button.
+ 1. Enter any character name into the search bar. It should return a card containing the character's image, name, type of specie, and a like button for every result loaded.
 
 ![](/gifs/search.gif)
 
@@ -30,11 +30,11 @@ You are able to search any Rick and Morty character using the search bar, see al
 
 ![](/gifs/next-back-buttons.gif)
 
-4. Click like on any of the characters and click again to unlike the character.
+4. Click the ♡ to like any of the characters and click the ❤️ to unlike the character.
 
 ![](/gifs/like-button.gif)
 
-5. Click on logo or character generator to return to homepage and clear out characters.
+5. Click on the logo or character generator to return to homepage and clear out characters.
 
 ![](/gifs/homepage.gif)
 
