@@ -1,7 +1,3 @@
-/* header{
-  padding-bottom: 80px;
-}
- */
 
 .logo{
   display: flex;
@@ -38,7 +34,6 @@ h2.logo{
 
 nav ul{
   float:right;
-  /* padding: 20px; */
 }
 
 nav li{
@@ -114,17 +109,22 @@ h1{
   color: white;
 }
 
+#cards-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1.5em;
+  margin-top: 40px;
+  margin-right: 35px;
+  margin-left: 35px;
+}
+
 .card{
   text-align: center;
-  width: 50%;
-  width: 15rem;
-  padding: .5rem;
+  padding-bottom: 5px;
   background-color: white;
   border: 5px solid #444;
   font-family: Helvetica;
   border-radius: 12px;
-  display: inline-grid;
-  margin: 1rem 2rem 0 7rem;
 }
 
 img.card-img{
@@ -148,7 +148,6 @@ img.card-img{
 .full{
   color:red;
   border-radius: 12px;
-  height:100%;
   background-color: #444;
 }
 
