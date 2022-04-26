@@ -18,13 +18,13 @@ Search any Rick and Morty character using the search bar, see all characters and
 
 
 ## How to use
- 1. Enter any character name into the search bar. It should return a card containing the character's image, name, type of specie, and a like button for every result loaded.
+ 1. Enter any character name into the search bar. It should return a card containing the character's image, name, type of species, and a like button for every result loaded.
 
-![](/gifs/search.gif)
+![](/gifs/search-characters.gif)
 
 2. On the top right corner exists an all characters link. Click on the link and the main characters will load first then the rest of the characters will load alphabetically.
 
-![](/gifs/all-character-link.gif)
+![](/gifs/all-characters-link.gif)
 
 3. On the bottom left and right corners are the back and next buttons. Click '>>' if you want to load the next set of characters or click '<<' if you want to load the previous set of characters.
 
@@ -32,11 +32,11 @@ Search any Rick and Morty character using the search bar, see all characters and
 
 4. Click the ♡ to like any of the characters and click the ❤️ to unlike the character.
 
-![](/gifs/like-button.gif)
+![](/gifs/like-unlike-button.gif)
 
 5. Click on the logo or character generator to return to homepage and clear out characters.
 
-![](/gifs/homepage.gif)
+![](/gifs/homePage.gif)
 
 
 ## Github Url
